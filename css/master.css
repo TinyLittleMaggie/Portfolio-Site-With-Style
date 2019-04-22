@@ -1,0 +1,184 @@
+/********** General Styling  **********/
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/********** Navigation Bar **********/
+.navBar {
+  background-color: #50364F;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+}
+
+.branding {
+  display: inline-block;
+  margin-right: 3em;
+  margin-top: 1em;
+}
+
+.logo {
+  width: 60px;
+  position: absolute;
+  margin: 15px 15px 15px 40px;
+}
+
+.siteName {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 120px;
+}
+
+.navList {
+  list-style: none;
+  float: none;
+  margin: 0.5em 3em 1em 1em;
+  padding-bottom: 2em;
+}
+
+.navItem {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+.navItem_active {
+  border-bottom: 3px solid #FFC864;
+}
+
+.navLink {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: #FFC864;
+}
+
+/********** Main Content **********/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  position: relative;
+  top: 240px;
+}
+
+.project {
+  width: 100%;
+}
+
+.projectImg {
+  width: 320px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.projectName {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  font-weight: medium;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 8px;
+}
+
+.projectDate {
+  font-family: 'Montserrat', sans-serif;
+  color: slategray;
+  font-size: 0.9em;
+  font-weight: normal;
+  margin: 0 20px;
+  margin-bottom: 30px;
+}
+
+/********** Footer **********/
+.footer {
+  text-align: center;
+  position: relative;
+  top: 240px;
+  padding: 30px;
+  background-color: rgba(80, 54 ,79 ,0.3);
+}
+
+.copyrightNotice {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
+/********** Media Queries **********/
+@media screen and (max-width: 450px) {
+  .logo {
+    width: 40px;
+
+  }
+
+  .siteName {
+    font-size: 1.5em;
+    margin-left: 90px;
+    margin-bottom: 8px;
+  }
+
+  .navItem {
+    margin: 0 0.7em;
+    font-size: 0.9em;
+  }
+
+  .container {
+    top: 200px;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .navBar {
+    text-align: left;
+  }
+
+  .navList {
+    float: right;
+    padding: 40px 25px 20px 0;
+    margin: 0;
+  }
+
+  .branding {
+    margin-right: 1em;
+    margin-top: 0;
+  }
+
+  .container {
+    top: 150px;
+    width: 720px;
+  }
+
+  .project {
+    width: 50%;
+    text-align: left;
+  }
+
+  .projectImg {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1160px) {
+  .container {
+    width: 1080px;
+  }
+
+  .project {
+    width: 33.33%;
+    text-align: left;
+  }
+}
